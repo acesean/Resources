@@ -6,30 +6,38 @@
     <link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>Snapshots</h1>
-
-    <!-- V1.0 start -->
-    <!--<ul>
-        <li><a href="images/fireworks.jpg" title="A fireworks display" onclick="showPic(this); return false;">Fireworks</a></li>
-        <li><a href="images/coffee.jpg" title="A cup of black coffee" onclick="showPic(this); return false;">Coffee</a></li>
-        <li><a href="images/rose.jpg" title="A red, red rose" onclick="showPic(this); return false;">Rose</a></li>
-        <li><a href="images/clock.jpg" title="A famous clock" onclick="showPic(this); return false;">Big Ben</a></li>
-    </ul>
-    <img id="placeholder" src="images/placeholder.jpg" width="400" height="300" alt="my image gallery" />
-    <p id="description">Choose an image.</p>-->
-    <!-- V1.0 end -->
-
-    <!-- V2.0 start -->
-    <ul id="imagegallery">
-        <li><a href="images/fireworks.jpg" title="A fireworks display">Fireworks</a></li>
-        <li><a href="images/coffee.jpg" title="A cup of black coffee">Coffee</a></li>
-        <li><a href="images/rose.jpg" title="A red, red rose">Rose</a></li>
-        <li><a href="images/clock.jpg" title="A famous clock">Big Ben</a></li>
-    </ul>
-    <img id="placeholder" src="images/placeholder.jpg" width="400" height="300" alt="my image gallery" />
-    <p id="description">Choose an image.</p>
-    <!-- V2.0 end -->
-
+    
+    <!-- 例1-3 借贷支付计算器 -->
+    <h1>例1-3</h1>
+    <form name="loandata">
+        <h2>Enter Loan Information:</h2>
+        <div class="in">
+            <label>1) Amount of the loan (any currency):</label>
+            <input type="text" name="principal" onchange="calculate();" />
+        </div>
+        <div class="in">
+            <label>2) Annual percentage rate of interest:</label>
+            <input type="text" name="interest" onchange="calculate();" />
+        </div>
+        <div class="in">
+            <label>3) Repayment penod in years:</label>
+            <input type="text" name="years" onchange="calculate();" />
+        </div>
+        <p><input type="button" value="compute" /></p>
+        <h2>Payment Information</h2>
+        <div>
+            <label>4) Your monthly payment will be:</label>
+            <input type="text" name="payment" />
+        </div>
+        <div>
+            <label>5) Your total payment will be:</label>
+            <input type="text" name="total" />
+        </div>
+        <div>
+            <label>6) Your total interest payments will be:</label>
+            <input type="text" name="totalinterest" />
+        </div>
+    </form>
 
     <script src="js/main.js"></script>
 
